@@ -18,8 +18,17 @@ employees = load_employees()
 print("Current Employees:")
 display_employees(employees)
 
+name = input("Enter Employee Name: ")
+shift = input("Enter Shift (morning/night): ")
+working_input = input("Is the Employee Working? (yes/no): ")
+# Convert yes/no into True/False 
+if working_input.lower() == "yes":
+    working = True
+else:
+    working = False
+
 new_employee = {
-    "name": "John Smith", "shift": "morning", "working": True
+    "name": name, "shift": shift, "working": working
 }
 
 employees.append(new_employee)
