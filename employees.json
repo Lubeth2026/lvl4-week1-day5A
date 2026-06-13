@@ -1,4 +1,27 @@
-[{"name": "Karen Mudd", "shift": "morning", "working": false},
- {"name": "Jess Noelle", "shift": "morning", "working": true}, 
- {"name": "Joe Hadden", "shift": "night", "working": true}, 
- {"name": "Kari Millan", "shift": "night", "working": false}]
+[
+    {
+        "name": "Karen Mudd",
+        "shift": "morning",
+        "working": false
+    },
+    {
+        "name": "Jess Noelle",
+        "shift": "morning",
+        "working": true
+    },
+    {
+        "name": "Joe Hadden",
+        "shift": "night",
+        "working": true
+    },
+    {
+        "name": "Kari Millan",
+        "shift": "night",
+        "working": false
+    },
+    {
+        "name": "John Smith",
+        "shift": "morning",
+        "working": true
+    }
+]

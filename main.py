@@ -1,16 +1,27 @@
 
 import json
+
 # print("Greetings!")
 
-employees = [
-    { "name": "Jess Noelle", "shift": "morning", "working": True },
-    { "name": "Joe Hadden", "shift": "night", "working": True },
-    { "name": "Kari Millan", "shift": "night", "working": False }
-]
+# Function #1 Creates a function & returns employee list
+def load_employees():
+    with open("employees.json", "r") as file:
+        return json.load(file)
 
-# with open("employees.json", "w") as file:
-#   json.dump(employees, file)
+# Function #2 Accepts data & writes it in JSON file
+def save_employees(employees):
+    with open("employees.json", "w") as file:
+        json.dump(employees, file, indent=4)
 
-with open("employees.json", "r") as file:
-    employees = json.load(file)
-print(employees)
+employees = load_employees()
+
+print("Current Employees:")
+
+
+new_employee = {
+    "name": "John Smith", "shift": "morning", "working": True
+}
+
+employees.append(new_employee)
+save_employees(employees)
+print("\nNew Employee Added!")
