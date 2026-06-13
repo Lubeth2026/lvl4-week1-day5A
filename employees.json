@@ -18,10 +18,5 @@
         "name": "Kari Millan",
         "shift": "night",
         "working": false
-    },
-    {
-        "name": "John Smith",
-        "shift": "morning",
-        "working": true
     }
 ]

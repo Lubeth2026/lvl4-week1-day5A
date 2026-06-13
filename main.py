@@ -1,6 +1,6 @@
 
 import json
-
+from helpers import display_employees
 # print("Greetings!")
 
 # Function #1 Creates a function & returns employee list
@@ -16,7 +16,7 @@ def save_employees(employees):
 employees = load_employees()
 
 print("Current Employees:")
-
+display_employees(employees)
 
 new_employee = {
     "name": "John Smith", "shift": "morning", "working": True
